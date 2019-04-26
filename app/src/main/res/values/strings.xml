@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GamingNetwork</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="cancelar">Fechar Aplicação</string>
+    <string name="abrir">Abrir Inquerito</string>
+    <string name="ed_enq">Editar Inquerito</string>
+</resources>
