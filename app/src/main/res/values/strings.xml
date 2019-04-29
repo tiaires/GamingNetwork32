@@ -27,4 +27,7 @@
     <string name="continuar">Continuar</string>
     <string name="continuar2">Continuar</string>
     <string name="erro">Erro</string>
+    <string name="inserir">Inserir</string>
+    <string name="alterar">Alterar</string>
+    <string name="eliminar">Eliminar</string>
 </resources>
