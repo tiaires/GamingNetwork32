@@ -46,6 +46,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_assignment_ind_black_24dp"/>
+
         <TextView
             android:id="@+id/nome"
             android:layout_width="100dp"
@@ -79,6 +85,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_email_black_24dp"/>
+
         <TextView
             android:id="@+id/email"
             android:layout_width="100dp"
@@ -111,6 +123,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_date_range_black_24dp"/>
+
         <TextView
             android:id="@+id/data"
             android:layout_width="114dp"
@@ -142,6 +160,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_videogame_asset_black_24dp"/>
 
         <TextView
             android:id="@+id/jogos"
@@ -192,7 +216,7 @@
         android:layout_marginRight="180dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/buttonstyle"
-        android:text="@string/cancelar"
+        android:text="@string/Cancelar"
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -14,5 +14,17 @@
     <string name="jogos">Jogos Preferidos :</string>
     <string name="in_jogos">Introduza o jogo/jogos</string>
     <string name="salvar_dados">Salvar Dados</string>
-    <string name="Cancelar">cancelar2</string>
+    <string name="Cancelar">cancelar</string>
+    <string name="nome_img">nome</string>
+    <string name="email">email_img</string>
+    <string name="data_img">data_img</string>
+    <string name="jogos_img">jogos_img</string>
+    <string name="informaçao">Parabéns vocè completou o registo para editar introduza o seu e-mail :</string>
+    <string name="informaçao2">Caso seja o administrador digite a senha para ver ou editar todos os inqueritos :</string>
+    <string name="senha">Senha :</string>
+    <string name="senha_ed">Introduza a senha</string>
+    <string name="senha_img">senha_img</string>
+    <string name="continuar">Continuar</string>
+    <string name="continuar2">Continuar</string>
+    <string name="erro">Erro</string>
 </resources>
