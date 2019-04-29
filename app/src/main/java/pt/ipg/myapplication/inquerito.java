@@ -194,11 +194,11 @@ public class inquerito extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-          /*  case R.id.inserir:
+            case R.id.inserir:
                 Toast.makeText(this, "Inserir novo inquerito", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, inquerito.class);
                 startActivity(intent);
-                return true; */
+                return true;
 
             case R.id.alterar:
                     Toast.makeText(this, "Alterar inquerito", Toast.LENGTH_SHORT).show();

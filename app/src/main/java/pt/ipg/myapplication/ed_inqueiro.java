@@ -18,7 +18,15 @@ public class ed_inqueiro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ed_inqueiro);
 
+        Button cancel = findViewById(R.id.button8);
         Button senha = findViewById(R.id.button9);
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         senha.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,11 +70,11 @@ public class ed_inqueiro extends AppCompatActivity {
                 startActivity(intent);
                 return true;
 
-         /*   case R.id.alterar:
+            case R.id.alterar:
                 Toast.makeText(this, "Alterar inquerito", Toast.LENGTH_SHORT).show();
                 Intent intent1 = new Intent(this, ed_inqueiro.class);
                 startActivity(intent1);
-                return true; */
+                return true;
 
             case R.id.eliminar:
                 Toast.makeText(this, "Eliminar inquerito", Toast.LENGTH_SHORT).show();

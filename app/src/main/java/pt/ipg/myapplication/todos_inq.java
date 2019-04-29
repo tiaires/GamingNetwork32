@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,10 +18,32 @@ public class todos_inq extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todos_inq);
 
+        Button cancel = findViewById(R.id.button10);
+        final Button eliminar = findViewById(R.id.button11);
+
         final TextView t1 = findViewById(R.id.textView8);
         final TextView t2 = findViewById(R.id.textView9);
         final TextView t3 = findViewById(R.id.textView10);
         final TextView t4 = findViewById(R.id.textView11);
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        eliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getApplicationContext(), todos_inq.class);
+                it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                it.putExtra("Sair", true);
+                startActivity(it);
+
+
+            }
+        });
 
         t1.setText(getIntent().getExtras().getString("nome"));
         t2.setText(getIntent().getExtras().getString("email"));
@@ -59,4 +83,5 @@ public class todos_inq extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
 }
