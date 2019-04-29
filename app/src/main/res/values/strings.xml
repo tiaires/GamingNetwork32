@@ -4,4 +4,15 @@
     <string name="cancelar">Fechar Aplicação</string>
     <string name="abrir">Abrir Inquerito</string>
     <string name="ed_enq">Editar Inquerito</string>
+    <string name="texto">Preencha o seguinte inquerito :</string>
+    <string name="nome">Nome :</string>
+    <string name="in_nome">Introduza o seu nome</string>
+    <string name="e_mail">E-mail :</string>
+    <string name="in_email">Introduza o seu e-mail</string>
+    <string name="data">Data de nacimento :</string>
+    <string name="clique">Clique</string>
+    <string name="jogos">Jogos Preferidos :</string>
+    <string name="in_jogos">Introduza o jogo/jogos</string>
+    <string name="salvar_dados">Salvar Dados</string>
+    <string name="Cancelar">cancelar2</string>
 </resources>

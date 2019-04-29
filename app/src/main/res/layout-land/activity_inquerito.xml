@@ -12,7 +12,7 @@
 
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
-        android:layout_height="105dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -35,7 +35,7 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="395dp"
-        android:layout_height="70dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:text="@string/nome"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editText2"
@@ -69,7 +69,7 @@
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="395dp"
-        android:layout_height="70dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:text="@string/e_mail"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editText"
@@ -101,7 +101,7 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="395dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:text="@string/data"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editText3"
@@ -133,14 +133,13 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="395dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
@@ -150,7 +149,7 @@
             android:layout_height="wrap_content"
             android:text="@string/jogos"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/editText4"
@@ -163,55 +162,41 @@
             tools:targetApi="o" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:orientation="vertical"
+        android:background="@drawable/buttonstyle"
+        android:text="@string/salvar_dados"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/buttonstyle"
+        android:text="@string/cancelar"
+        android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.114">
-
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/buttonstyle"
-            android:text="@string/salvar_dados"
-            android:textColor="#FFF" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/buttonstyle"
-            android:text="@string/Cancelar"
-            android:textColor="#FFF" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
 
 </android.support.constraint.ConstraintLayout>

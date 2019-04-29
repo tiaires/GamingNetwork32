@@ -63,4 +63,10 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
 
+    public void abrir(View view) {
+    }
+
+    public void cancelar(View view){
+
+    }
 }
