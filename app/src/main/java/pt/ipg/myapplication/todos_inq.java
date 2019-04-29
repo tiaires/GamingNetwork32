@@ -28,9 +28,6 @@ public class todos_inq extends AppCompatActivity {
 
     }
 
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
