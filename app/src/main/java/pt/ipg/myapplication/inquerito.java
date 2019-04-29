@@ -1,16 +1,12 @@
 package pt.ipg.myapplication;
-
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -20,7 +16,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
+
 
 
 import java.util.Calendar;
@@ -30,7 +26,7 @@ public class inquerito extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
 
-    Button cancelar2, guardar, inserir;
+    Button cancelar2, guardar;
     TextView mdata;
     EditText nome, email, jogos;
     DatePickerDialog.OnDateSetListener mmdata;
@@ -58,13 +54,9 @@ public class inquerito extends AppCompatActivity {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guardar2();
-                Intent intent = new Intent(inquerito.this,todos_inq.class);
-                intent.putExtra("nome",nome.getText().toString());
-                intent.putExtra("email",email.getText().toString());
-                intent.putExtra("jogos",jogos.getText().toString());
-                intent.putExtra("data",mdata.getText().toString());
-                startActivity(intent);
+                validar();
+
+                /*startActivity(intent);*/
             }
         });
 
@@ -109,15 +101,15 @@ public class inquerito extends AppCompatActivity {
 
         finish();
     }
-
+/*
     public void guardar2() {
 
         validaCampos();
 
         Toast.makeText(this, "Obrigado por registar o inquerito", Toast.LENGTH_SHORT).show();
 
-    }
-
+    }*/
+/*
 
     private void validaCampos() {
 
@@ -156,6 +148,40 @@ public class inquerito extends AppCompatActivity {
 
         boolean res = (campoVazio(email1) && Patterns.EMAIL_ADDRESS.matcher(email1).matches());
         return res;
+    }*/
+
+    private void validar(){
+        nome.setError(null);
+        email.setError(null);
+        jogos.setError(null);
+
+        String ednome = nome.getText().toString();
+        String edemail = email.getText().toString();
+        String edjogos = jogos.getText().toString();
+
+            if(TextUtils.isEmpty(ednome)){
+                nome.setError(getString(R.string.erro));
+                nome.requestFocus();
+                return;
+            } else if(TextUtils.isEmpty(edemail)) {
+                email.setError(getString(R.string.erro));
+                email.requestFocus();
+                return;
+
+        }   else if(TextUtils.isEmpty(edjogos)){
+                jogos.setError(getString(R.string.erro));
+                jogos.requestFocus();
+                return;
+            }else{
+                Intent intent = new Intent(inquerito.this,todos_inq.class);
+                intent.putExtra("nome",nome.getText().toString());
+                intent.putExtra("email",email.getText().toString());
+                intent.putExtra("jogos",jogos.getText().toString());
+                intent.putExtra("data",mdata.getText().toString());
+                startActivity(intent);
+
+            }
+
     }
 
     @Override
@@ -168,11 +194,11 @@ public class inquerito extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.inserir:
+          /*  case R.id.inserir:
                 Toast.makeText(this, "Inserir novo inquerito", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, inquerito.class);
                 startActivity(intent);
-                return true;
+                return true; */
 
             case R.id.alterar:
                     Toast.makeText(this, "Alterar inquerito", Toast.LENGTH_SHORT).show();

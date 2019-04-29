@@ -62,16 +62,15 @@ public class ed_inqueiro extends AppCompatActivity {
                 startActivity(intent);
                 return true;
 
-            case R.id.alterar:
+         /*   case R.id.alterar:
                 Toast.makeText(this, "Alterar inquerito", Toast.LENGTH_SHORT).show();
                 Intent intent1 = new Intent(this, ed_inqueiro.class);
                 startActivity(intent1);
-                return true;
+                return true; */
 
             case R.id.eliminar:
                 Toast.makeText(this, "Eliminar inquerito", Toast.LENGTH_SHORT).show();
-                Intent intent2 = new Intent(this, todos_inq.class);
-                startActivity(intent2);
+                finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
